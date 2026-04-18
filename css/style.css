@@ -13,6 +13,13 @@ li {
   margin-bottom: 0;
   padding: 0;
 }
+html{
+  scroll-behavior: smooth;
+}
+::selection {
+    background-color: var(--main-color);
+    color: white;
+}
 .main-color {
   color: #57178f;
 }
@@ -109,9 +116,6 @@ body {
   color: #7f22fe;
 }
 
-.my-nav .location {
-  overflow: hidden;
-}
 .my-nav .overlay {
   position: absolute;
   inset: 0;
@@ -129,7 +133,7 @@ body {
   pointer-events: none;
 }
 
-.my-nav .location .location-foto {
+.my-nav .location-foto {
   height: 90px;
   width: 100%;
   overflow: hidden;
@@ -160,9 +164,6 @@ body {
 
 /*  */
 
-.my-nav .nav-link.active {
-  border-bottom: 2px solid var(--main-color);
-}
 
 .my-page {
   text-align: center;
@@ -180,25 +181,22 @@ body {
   transition: width 0.5s;
 }
 
-/* hover */
 .my-page:hover::after {
   width: 100%;
 }
 
-/* active */
 .my-page.active::after {
   width: 100%;
 }
 
-/* hover color */
 .my-page:hover {
   color: var(--main-color);
 }
 
-/* active color */
 .my-page.active {
   color: var(--main-color);
 }
+
 
 /***** End navbar *****/
 
