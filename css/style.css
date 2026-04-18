@@ -481,13 +481,22 @@ body {
 .Testimonials .carousel-control-next:hover,
 .Testimonials .carousel-control-prev:hover {
   background-color: #7c48a696;
+  
 }
 .Testimonials .carousel-control-next {
   right: -60px;
+  @media (max-width: 786px) {
+  display: none;
+}
+
 }
 
 .Testimonials .carousel-control-prev {
   left: -60px;
+  @media (max-width: 786px) {
+  display: none;
+}
+
 }
 
 /***** End Section 3 Testimonials*****/
