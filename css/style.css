@@ -300,10 +300,50 @@ body {
   border-radius: 20px;
   background-color: #7c3aed61;
 }
-
 .Featured .card button:hover {
   background-color: #7c3aed85;
 }
+
+
+
+
+
+
+.property-card .position-relative {
+    overflow: hidden;
+    border-radius: 0.375rem; 
+}
+
+
+.property-card .card-img-top {
+    transition: transform 0.5s ease-in-out; 
+    display: block;
+}
+
+
+.property-card:hover .card-img-top {
+    transform: scale(1.1); 
+}
+
+/* 
+.property-card .Drop, 
+.property-card .Drop-i, 
+.property-card .Drop-b {
+    z-index: 2;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /***** End Section 1 Featured *****/
 
@@ -511,6 +551,9 @@ body {
   border-radius: 50%;
   background-color: #f5f3fe;
   border: 2px solid #ffffff;
+@media (max-width: 786px) {
+  display: none;
+}
 }
 .Contact::before {
   content: "";
@@ -523,6 +566,10 @@ body {
   background-color: transparent;
   border: 3px solid #ddd6ff;
   z-index: 1;
+  @media (max-width: 786px) {
+  display: none;
+}
+
 }
 
 .Contact .Call {
