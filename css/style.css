@@ -1,8 +1,7 @@
 /***** global *****/
 
 :root {
-  --main-color: oklch(0.541 0.281 293.009)
-;
+  --main-color: oklch(0.541 0.281 293.009);
 }
 a {
   text-decoration: none;
@@ -18,21 +17,13 @@ li {
   color: #57178f;
 }
 
-body{
+body {
   font-family: sans-serif;
 }
 @font-face {
   font-family: "Cairo";
   src: url("../fonts/Cairo-Regular.ttf") format("truetype");
 }
-
-
-
-
-
-
-
-
 
 .our .Build {
   font-weight: 700;
@@ -92,7 +83,7 @@ body{
 .properties {
   background: linear-gradient(to right, #a855f7, #ffb347);
   -webkit-background-clip: text;
-   background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -104,18 +95,6 @@ body{
   font-weight: 400;
   color: oklch(0.446 0.03 256.802);
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /***** End global *****/
 
@@ -181,54 +160,45 @@ body{
 
 /*  */
 
-
-
-
-
 .my-nav .nav-link.active {
-      border-bottom: 2px solid var(--main-color);
-
+  border-bottom: 2px solid var(--main-color);
 }
 
-.my-page{
-    text-align: center;
-    position: relative;
+.my-page {
+  text-align: center;
+  position: relative;
 }
 
-.my-page::after{
-    content: "";
-    background-color: var(--main-color);
-    width: 0;
-    height:2px ;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: width 0.5s;
+.my-page::after {
+  content: "";
+  background-color: var(--main-color);
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.5s;
 }
 
 /* hover */
-.my-page:hover::after{
-    width: 100%;
+.my-page:hover::after {
+  width: 100%;
 }
 
 /* active */
-.my-page.active::after{
-    width: 100%;
+.my-page.active::after {
+  width: 100%;
 }
 
 /* hover color */
-.my-page:hover{
-    color: var(--main-color);
+.my-page:hover {
+  color: var(--main-color);
 }
 
 /* active color */
-.my-page.active{
-    color: var(--main-color);
+.my-page.active {
+  color: var(--main-color);
 }
-
-
-
-
 
 /***** End navbar *****/
 
@@ -290,11 +260,7 @@ body{
 
 /***** Section 1 Featured *****/
 
-
-
-
-
-.Featured .Drop{
+.Featured .Drop {
   position: absolute;
   top: 20px;
   left: 10%;
@@ -302,66 +268,53 @@ body{
   padding: 3px 9px;
 }
 
-
-.Featured .Drop-i{
- position: absolute;
+.Featured .Drop-i {
+  position: absolute;
   top: 20px;
   right: 10%;
   background-color: white;
   padding: 3px 9px;
   border-radius: 10px;
-
 }
-.Featured .Drop-i:hover{
+.Featured .Drop-i:hover {
   color: red;
 }
-.Featured .Drop-b{
-    position: absolute;
+.Featured .Drop-b {
+  position: absolute;
   bottom: 10%;
   left: 10%;
-  background-color:#01323D;
+  background-color: #01323d;
   padding: 3px 9px;
   color: white;
   border-radius: 15px;
-
 }
 
-
-.Featured .card .John{
+.Featured .card .John {
   width: 35px;
   height: 35px;
 }
 
-
-.Featured .card button{
+.Featured .card button {
   border: none;
   padding: 10px;
   border-radius: 20px;
   background-color: #7c3aed61;
 }
 
-.Featured .card button:hover{
+.Featured .card button:hover {
   background-color: #7c3aed85;
 }
 
-
-
-
 /***** End Section 1 Featured *****/
 
-/***** Section 2 Services *****/ 
+/***** Section 2 Services *****/
 
-
-
-.Services .Planning p{
-    color: oklch(0.446 0.03 256.802)
-
+.Services .Planning p {
+  color: oklch(0.446 0.03 256.802);
 }
 
-
-
-.Services .Search{
-  width:40px ;
+.Services .Search {
+  width: 40px;
   height: 40px;
   background-color: #57178f4a;
   display: flex;
@@ -370,186 +323,137 @@ body{
   border-radius: 10px;
 }
 
-.Services .expert{
-  max-width: 400px;
-;
-}
-.Services .Access{
+.Services .expert {
   max-width: 400px;
 }
+.Services .Access {
+  max-width: 400px;
+}
 
-
-
-
-.Services .Rate{
+.Services .Rate {
   position: absolute;
   left: -20px;
   bottom: 0;
   padding: 20px 25px;
- line-height: 10px;
+  line-height: 10px;
 }
 
-
-
 #pills-tab .nav-link {
-    background-color: transparent; 
-    color: #444; 
-    border: none;
-    border-bottom: 2px solid transparent;
-    border-radius: 0; 
-    font-weight: 500;
-    transition: all 0.3s ease;
-    padding: 10px 15px;
+  background-color: transparent;
+  color: #444;
+  border: none;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 10px 15px;
 }
 
 #pills-tab .nav-link:hover,
 #pills-tab .nav-link.active {
-    color: var(--main-color); 
-    border-bottom: 2px solid #6366f1; 
+  color: var(--main-color);
+  border-bottom: 2px solid #6366f1;
 }
 
 #pills-tab .nav-link i {
-    margin-right: 8px; 
-    font-size: 1.1rem;
+  margin-right: 8px;
+  font-size: 1.1rem;
 }
-#pills-tab .nav-link.active:hover{
+#pills-tab .nav-link.active:hover {
   background-color: #57178f59;
 }
 
 /*  */
 #pills-tab .nav-link.active {
-    color: #6366f1 !important; 
-    border-bottom: 2px solid #6366f1; 
-    background-color: rgba(99, 102, 241, 0.1); 
-    
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+  color: #6366f1 !important;
+  border-bottom: 2px solid #6366f1;
+  background-color: rgba(99, 102, 241, 0.1);
+
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 #pills-tab .nav-link:hover {
-    color: #6366f1;
-    background-color: rgba(99, 102, 241, 0.05); 
+  color: #6366f1;
+  background-color: rgba(99, 102, 241, 0.05);
 }
-
-
-
-
-
-
 
 /***** End Section 2 Services *****/
-/***** Section 3 Testimonials*****/ 
- 
- 
- 
- .Testimonials{
-  background-color:#56178E;
+/***** Section 3 Testimonials*****/
+
+.Testimonials {
+  background-color: #56178e;
 }
- 
- /*  */
- 
-#testimonialsCarousel{
+
+/*  */
+
+#testimonialsCarousel {
   width: 80%;
   height: auto;
 }
 
-
-
-
 .carousel-item {
-      color: oklch(0.446 0.03 256.802);
-
+  color: oklch(0.446 0.03 256.802);
 }
 
 .carousel-item .card {
   border-radius: 20px;
 }
 
-
-
- .Testimonials .company{
+.Testimonials .company {
   max-width: 900px;
   text-align: left;
- }
- @media (max-width: 786px) {
-  #testimonialsCarousel{
+}
+@media (max-width: 786px) {
+  #testimonialsCarousel {
     width: 100%;
   }
-  
- }
- 
- 
-  .Testimonials .Michael img{
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-  }
- 
- 
-   .Testimonials .Foster{
-    line-height: 10px;
-    text-align: left;
-   }
-.Testimonials .carousel-indicators [data-bs-target]{
+}
+
+.Testimonials .Michael img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.Testimonials .Foster {
+  line-height: 10px;
+  text-align: left;
+}
+.Testimonials .carousel-indicators [data-bs-target] {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-
 }
 
-
-.Testimonials .carousel-control-next
-,.Testimonials .carousel-control-prev[data-bs-target]{
-opacity: 1;
-width: 50px;
-height: 50px;
-background-color: #7B48A6;
-border-radius: 50%;
-top: 50%;
-transform: translateY(-50%);
-transition: .3s ;
-
+.Testimonials .carousel-control-next,
+.Testimonials .carousel-control-prev[data-bs-target] {
+  opacity: 1;
+  width: 50px;
+  height: 50px;
+  background-color: #7b48a6;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.3s;
 }
 
-
-
-.Testimonials .carousel-control-next:hover
-,.Testimonials .carousel-control-prev:hover{
-  background-color:#7c48a696;
+.Testimonials .carousel-control-next:hover,
+.Testimonials .carousel-control-prev:hover {
+  background-color: #7c48a696;
 }
-.Testimonials .carousel-control-next{
+.Testimonials .carousel-control-next {
   right: -60px;
 }
 
-.Testimonials .carousel-control-prev{
+.Testimonials .carousel-control-prev {
   left: -60px;
 }
 
+/***** End Section 3 Testimonials*****/
 
+/***** Section 4 FAQ *****/
 
-
-
-
-
-
-
- /***** End Section 3 Testimonials*****/
-
-
-
-
-
- /***** Section 4 FAQ *****/ 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
 .accordion-item {
   border: none;
   border-radius: 15px;
@@ -557,9 +461,8 @@ transition: .3s ;
   overflow: hidden;
   padding: 10px;
   width: 80%;
-  margin-inline:  auto;
+  margin-inline: auto;
 
-  /* ده المهم 👇 */
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.281);
 }
 .accordion-button {
@@ -569,76 +472,32 @@ transition: .3s ;
 
 .accordion-button:not(.collapsed) {
   background-color: white;
-  box-shadow: none ;
+  box-shadow: none;
 }
- 
- 
- 
- 
- 
- /* يشيل أي تأثير أزرق عند الضغط */
+
 .accordion-button:focus,
 .accordion-button:active {
   outline: none;
   box-shadow: none;
 }
 
-/* كمان في حالة keyboard focus */
 .accordion-button:focus-visible {
   outline: none;
   box-shadow: none;
 }
- 
- .accordion-button {
-  font-size: 18px; /* كبره زي ما تحب */
-  font-weight: 600; /* يخليه أوضح */
+
+.accordion-button {
+  font-size: 18px;
+  font-weight: 600;
 }
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- /***** End Section 4 FAQ *****/
- 
 
+/***** End Section 4 FAQ *****/
 
+/***** Section 5 Contact *****/
 
-
-
-
-
-
-
- /***** Section 5 Contact *****/ 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- .Contact {
-  background-color: #fff; /* خلفية بيضة للسكشن */
-  position: relative; /* عشان نحدد موضع العناصر */
+.Contact {
+  background-color: #fff;
+  position: relative;
   overflow: hidden;
 }
 
@@ -646,115 +505,85 @@ transition: .3s ;
   content: "";
   position: absolute;
   top: -30px;
-  right: -60px; 
-  width: 200px; 
+  right: -60px;
+  width: 200px;
   height: 200px;
-  border-radius: 50%; 
-  background-color:#F5F3FE;
+  border-radius: 50%;
+  background-color: #f5f3fe;
   border: 2px solid #ffffff;
 }
-.Contact::before{
-    content: "";
+.Contact::before {
+  content: "";
   position: absolute;
   top: 50px;
   right: 70px;
-  width: 100px; 
+  width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color:transparent;
-  border: 3px solid #DDD6FF;
+  background-color: transparent;
+  border: 3px solid #ddd6ff;
   z-index: 1;
-
 }
- 
-.Contact .Call{
+
+.Contact .Call {
   width: 60px;
   height: 60px;
   border-radius: 15px;
   background-color: var(--main-color);
   color: white;
-  transition: .4s;
-}
- 
-
-
-
-
-.Contact .col-6{
-  transition: .2s;
+  transition: 0.4s;
 }
 
-
-
-.Contact .col-6:hover{
-box-shadow: 1px 1px var(--main-color);
-border-radius: 20px;
-transform: translateY(-10px);
+.Contact .col-6 {
+  transition: 0.2s;
 }
- .Contact .col-6:hover .Call{
+
+.Contact .col-6:hover {
+  box-shadow: 1px 1px var(--main-color);
+  border-radius: 20px;
+  transform: translateY(-10px);
+}
+.Contact .col-6:hover .Call {
   transform: scale(1.1);
- }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-.Contact .Hills{
+.Contact .Hills {
   max-width: 200px;
 }
 
-
-
-.Contact .Luxury{
-  background-color: #F4F5F7;
+.Contact .Luxury {
+  background-color: #f4f5f7;
 }
 
-.Contact .media{
+.Contact .media {
   background-color: var(--main-color);
   padding: 15px 40px;
   border-radius: 20px;
   box-shadow: 1px 1px var(--main-color);
 }
 
-.Contact .media p{
+.Contact .media p {
   max-width: 550px;
-  font-size: .75rem;
-
+  font-size: 0.75rem;
 }
 
-.Contact .Follow {
-  width:40px ;
+.Follow {
+  width: 40px;
   height: 40px;
-  background-color: #A944FC;
-  display: flex ;
+  background-color: #a944fc;
+  display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  transition: .3s;
+  transition: 0.3s;
   cursor: pointer;
 }
 
-
-.Contact .Follow:hover{
+.Contact .Follow:hover {
   transform: scale(1.2);
 }
 
-
-
-
 /* row form */
-
-
-
-
 
 .form-control,
 .form-select {
@@ -770,36 +599,34 @@ form {
   max-width: 800px;
   margin: auto;
 }
-.pilot{
-  transition: .4s;
+.pilot {
+  transition: 0.4s;
 }
 
-
-.pilot:hover{
-transform: translateY(-7px);
+.pilot:hover {
+  transform: translateY(-7px);
 }
 
+/***** End Section 5 Contact *****/
 
+/***** footer *****/
 
+.footer {
+  background-color: #551790;
+  color: white;
+}
 
+.footer .Follow {
+  background-color: #672f9a;
+}
 
+.footer .Follow:hover {
+  background-color: #7f22fe;
+  transform: scale(1.2);
+}
 
+.footer .made {
+  border-top: 1px solid #662f9c;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
- 
- /***** End Section 5 Contact *****/
- 
+/***** End footer *****/
