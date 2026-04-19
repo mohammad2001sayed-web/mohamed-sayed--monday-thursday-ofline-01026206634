@@ -595,13 +595,15 @@ display: none; }
 }
 
 .Contact .col-6 {
-  transition: 0.2s;
+  transition: all 0.5s;
+  padding: 10px;
+  border-radius: 20px;
 }
 
 .Contact .col-6:hover {
   box-shadow: 1px 1px var(--main-color);
-  border-radius: 20px;
   transform: translateY(-10px);
+  border: 1px solid var(--main-color);
 }
 .Contact .col-6:hover .Call {
   transform: scale(1.1);
