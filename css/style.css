@@ -309,6 +309,11 @@ display: none; }
   background-color: #7c3aed85;
 }
 
+@media (max-width: 786px) {
+    .Featured .Properties {
+      width: 100% !important;
+    }
+  }
 
 
 
@@ -330,12 +335,6 @@ display: none; }
     transform: scale(1.1); 
 }
 
-/* 
-.property-card .Drop, 
-.property-card .Drop-i, 
-.property-card .Drop-b {
-    z-index: 2;
-} */
 
 
 
