@@ -594,18 +594,18 @@ display: none; }
   transition: 0.4s;
 }
 
-.Contact .col-6 {
+.Contact .col-md-3 {
   transition: all 0.5s;
   padding: 10px;
   border-radius: 20px;
 }
 
-.Contact .col-6:hover {
+.Contact .col-md-3:hover {
   box-shadow: 1px 1px var(--main-color);
   transform: translateY(-10px);
   border: 1px solid var(--main-color);
 }
-.Contact .col-6:hover .Call {
+.Contact .col-md-3:hover .Call {
   transform: scale(1.1);
 }
 
@@ -622,6 +622,7 @@ display: none; }
   padding: 15px 40px;
   border-radius: 20px;
   box-shadow: 1px 1px var(--main-color);
+  position: relative;
 }
 
 .Contact .media p {
@@ -643,6 +644,38 @@ display: none; }
 
 .Contact .Follow:hover {
   transform: scale(1.2);
+}
+.media::after {
+  content: "";
+  position: absolute;
+  bottom: -140%;
+  left: -100px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #f5f3fe;
+  border: 2px solid #ffffff;
+  @media (max-width: 786px) {
+    display: none;
+  }
+
+}
+.media::before {
+  content: "";
+  position: absolute;
+  bottom: -120px;
+  left: -30px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 3px solid #ddd6ff;
+  z-index: 1;
+  transform: translateX(50%);
+  @media (max-width: 786px) {
+    display: none;
+  }
+
 }
 
 /* row form */
